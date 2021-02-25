@@ -1,0 +1,9 @@
+{
+  "name": "Awesome blank page",
+  "description": "This is an awesome blank page to share links.",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
+}
