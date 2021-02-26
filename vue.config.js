@@ -13,4 +13,15 @@ module.exports = {
         },
       ]);
   },
+  devServer: {
+    proxy: {
+      '^/wallpaper': {
+        target: 'https://www.bing.com/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/wallpaper': '',
+        },
+      },
+    },
+  },
 };
