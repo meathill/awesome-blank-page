@@ -1,11 +1,18 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './src/**/*.vue',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      lineHeight: {
+        '4x': '4',
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 };

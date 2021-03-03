@@ -1,6 +1,8 @@
 const CopyPlugin = require('copy-webpack-plugin');
+const {DefinePlugin} = require('webpack');
 
 module.exports = {
+  lintOnSave: false,
   chainWebpack(config) {
     config.plugin('copy')
       .use(CopyPlugin, [
@@ -10,6 +12,12 @@ module.exports = {
               from: 'manifest.json',
             },
           ],
+        },
+      ]);
+    config.plugin('define')
+      .use(DefinePlugin, [
+        {
+          isDev: process.env.NODE_ENV === 'development',
         },
       ]);
   },

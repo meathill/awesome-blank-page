@@ -11,12 +11,14 @@
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "postcss-loader": "^5.0.0",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
@@ -24,7 +26,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-standard": "^5.1.2",
-    "autoprefixer": "^10.2.4",
+    "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "copy-webpack-plugin": "^6.4.1",
     "eslint": "^6.7.2",
@@ -33,9 +35,11 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-0",
-    "postcss": "^8.2.6",
+    "postcss": "^7.0.35",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   }
 }
